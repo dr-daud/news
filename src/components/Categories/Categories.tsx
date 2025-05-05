@@ -10,7 +10,10 @@ interface Props {
 }
 
 const Categories = forwardRef(
-	({ categories, setSelectedCategory, selectedCategory }: Props, ref: ForwardedRef<HTMLDivElement>) => {
+	(
+		{ categories, setSelectedCategory, selectedCategory }: Props,
+		ref: ForwardedRef<HTMLDivElement>
+	) => {
 		return (
 			<div ref={ref} className={styles.categories}>
 				<button
